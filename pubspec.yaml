@@ -1,0 +1,40 @@
+name: flutter_application_1
+description: A personal attendance tracking app.
+publish_to: 'none'
+
+# This fixes the "exit code 65" error
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  provider: ^6.1.1
+  
+  # Database (Local Storage)
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  
+  # Date & Calendar tools
+  intl: ^0.19.0
+  table_calendar: ^3.1.0
+  
+  # UI Utilities
+  flutter_slidable: ^3.0.1
+  cupertino_icons: ^1.0.6
+  uuid: ^4.3.3
+
+  google_generative_ai: ^0.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  # Code Generators (Required for Hive)
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.8
+
+flutter:
+  uses-material-design: true
