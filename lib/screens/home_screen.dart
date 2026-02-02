@@ -6,6 +6,7 @@ import 'dart:convert';
 import '../providers/attendance_provider.dart';
 import '../models/attendance_record.dart';
 import 'subject_detail_screen.dart';
+import '../secrets.dart'; 
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -179,7 +180,7 @@ class HomeScreen extends StatelessWidget {
               child: Text("Process"),
               onPressed: () async {
                 setState(() => isLoading = true);
-                const apiKey = 'AIzaSyBKaON_mbpzKY920GfbzlaqiRAiLlUZ9Os'; 
+                const apiKey = googleApiKey; 
 
                 try {
                    final model = GenerativeModel(model: 'gemini-2.5-flash', apiKey: apiKey);

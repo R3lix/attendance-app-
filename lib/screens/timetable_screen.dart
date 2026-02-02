@@ -1,14 +1,16 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/secrets.dart';
 import 'package:provider/provider.dart';
 import 'package:uuid/uuid.dart';
 import 'package:google_generative_ai/google_generative_ai.dart';
 import '../providers/attendance_provider.dart';
 import '../models/subject.dart';
+import '../secrets.dart';
 
 class TimetableScreen extends StatelessWidget {
   // ⚠️ PASTE YOUR API KEY HERE AGAIN
-  final String apiKey = 'AIzaSyBKaON_mbpzKY920GfbzlaqiRAiLlUZ9Os';
+  final String apiKey = googleApiKey;
 
   @override
   Widget build(BuildContext context) {
